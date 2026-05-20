@@ -1,6 +1,18 @@
 <div class="row g-5 mb-5">
-  <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Experience</h3>
-    <div>Add content of Jobs and Schools as timeline view</div>
+  <h3 class="fw-bold border-bottom pb-3 mb-5">Experience</h3>
+  <div class="experience-container ">
+    {% for item in site.data.experiences.items %}
+    <div class="experience-item">
+       <p class="experience-name">{{item.name}}</p>
+       <div class="d-flex experience-details">
+          <p class="pe-2">{{item.institution}}</p>
+          <p>&#183</p>
+          <p class="ps-2">{{item.dates}}</p>
+      </div>
+      <p>{{item.description}}</p>
+      <a target="_blank" rel="noopener noreferrer" href="{{item.certificate_link}}"><img src="assets/img/graduation-cap-solid-full.svg" class="logo" alt="binoculars"/></a>
+      <a target="_blank" rel="noopener noreferrer" href="{{item.program_link}}"><img src="assets/img/arrow-up-right-from-square-solid-full.svg" class="logo" alt="binoculars"/></a>
+    </div>
+    {% endfor %}
   </div>
 </div>

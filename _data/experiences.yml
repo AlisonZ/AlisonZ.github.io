@@ -1,0 +1,6 @@
+items: 
+- {name: 'Ada Developers Academy', dates: '2017', institution: 'Ada', description: 'Year-long software engineering training program', certificate_link: '/experience/fake_certificate.md', program_link: 'https://adadevelopersacademy.org/'}
+- {name: 'Front-End Development Certificate', dates: '2019', institution: 'UW Continuing Ed', description: '8 month certification in HTML, CSS and Javascript', certificate_link: '/experience/fake_certificate.md', program_link: 'https://www.pce.uw.edu/certificates/front-end-development-with-html-css-and-javascript'}
+- {name: 'Python Certificate', dates: '2025', institution: 'UW Continuing Ed', description: '8 month Python Programming course', certificate_link: '/experience/fake_certificate.md', program_link: 'https://www.pce.uw.edu/certificates/python-programming'}
+- {name: 'NLT Certificate', dates: '2026', institution: 'UW Continuing Ed', description: '8 month certification in NLT programming', certificate_link: '/experience/fake_certificate.md', program_link: 'https://www.pce.uw.edu/certificates/natural-language-technology'}
+
