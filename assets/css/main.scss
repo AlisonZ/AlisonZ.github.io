@@ -56,10 +56,11 @@ body a {
 .experience-items-container {
   flex: 1;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
-  justify-content: flex-end;
+  position: relative;
 }
+
 
 .experience-cards {
   display: flex;
@@ -79,8 +80,54 @@ body a {
   box-sizing: border-box;
 }
 
-.experience-items-container .card-item {
+.experience-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   width: 100%;
+  position: relative;
+}
+
+.experience-row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: -1rem;
+  left: 9px;
+  width: 2px;
+  background: black;
+  z-index: 0;
+}
+
+.experience-row:first-child::before {
+  top: 50%;
+}
+
+.experience-row:last-child::before {
+  bottom: 0;
+}
+
+.experience-row-label {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  background: white;
+}
+
+.experience-circle {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.experience-items-container .card-item {
+  flex: 1;
+  width: auto;
 }
 
 .card-name {
@@ -91,3 +138,4 @@ body a {
 .card-details {
   font-weight: 300;
 }
+

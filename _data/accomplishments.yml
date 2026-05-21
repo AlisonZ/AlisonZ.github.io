@@ -3,4 +3,6 @@ items:
 - {name: 'Front-End Development Certificate', dates: '2019', institution: 'UW Continuing Ed', description: '8 month certification in HTML, CSS and Javascript', certificate_link: '/experience/fake_certificate.md', program_link: 'https://www.pce.uw.edu/certificates/front-end-development-with-html-css-and-javascript'}
 - {name: 'Python Certificate', dates: '2025', institution: 'UW Continuing Ed', description: '8 month Python Programming course', certificate_link: '/experience/fake_certificate.md', program_link: 'https://www.pce.uw.edu/certificates/python-programming'}
 - {name: 'NLT Certificate', dates: '2026', institution: 'UW Continuing Ed', description: '8 month certification in NLT programming', certificate_link: '/experience/fake_certificate.md', program_link: 'https://www.pce.uw.edu/certificates/natural-language-technology'}
+- {name: 'Linguistic Partner', dates: '2015', institution: 'Breath of Life', description: 'Assisted members of the Seneca nation in researching linguistic information in the National Museum of the American Indian archives', certificate_link: 'https://news.uoregon.edu/oq/linguists-and-native-americans-team-up-on-indigenous-languages', program_link: 'https://mc.miamioh.edu/nbol/'}
+
 

@@ -1,7 +1,8 @@
 menu:
-- {name: 'papers', url: '/publications'}
+- {name: 'scholarship', url: '/scholarship'}
 - {name: 'cv', url: '/cv'}
 - {name: 'contact', url: '/contact'}
+
 
 
 social:
@@ -10,7 +11,7 @@ social:
 - {icon: 'linkedin', link: 'https://linkedin.com/in/alisonzerbe'}
 
 contacts:
-- {name: 'Alison Zerbe', title: 'Student', department: 'CLMS', institution: 'University of Washington', email: 'zerbea@uw.edu', image: 'assets/img/phones.jpg'}
+- {name: 'Alison Zerbe', title: 'Student', department: 'CLMS', institution: 'University of Washington', email: 'zerbea@uw.edu', image: '/assets/img/phones.jpg'}
 
 experience:
 - {institution: 'Indeed', dates: '2017 - present', role: "Software Engineer"}

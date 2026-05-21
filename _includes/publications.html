@@ -4,11 +4,11 @@
     <div>Add real pdf links for papers</div>
     {% if page.title == "Home" %}
       {% for item in site.data.publications.featured %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+        <p><a href="{{ item.url | relative_url }}">{{ item.name }}</a></p>
       {% endfor %}
     {% else %}
       {% for item in site.data.publications.index %}
-        <p><a href="{{ item.url }}">{{ item.name }}</a></p>
+        <p><a href="{{ item.url | relative_url }}">{{ item.name }}</a></p>
       {% endfor %}
     {% endif %}
   </div>

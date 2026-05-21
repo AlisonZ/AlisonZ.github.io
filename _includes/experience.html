@@ -5,21 +5,28 @@
   </div>
   <div class="experience-items-container">
     {% for item in site.data.experiences.items %}
-    <div class="card-item">
-      <p class="card-name">{{item.job_title}}</p>
-      <p class="card-name">{{item.company_name}}</p>
-      <div class="d-flex card-details">
-        <p class="pe-2">{{item.dates}}</p>
-        <p>&#183</p>
-        <p class="ps-2">{{item.location}}</p>
+    <div class="experience-row">
+      <div class="experience-row-label">
+        <img src="{{ item.timeline_icon | relative_url }}" class="experience-circle"/>
       </div>
-      <div>
-        Responsibilities:
-        <ul>
-          {% for r in item.responsibilities %}
-          <li>{{r}}</li>
-          {% endfor %}
-        </ul>
+      <div class="card-item">
+        <div>
+          <p class="card-name">{{item.job_title}}</p>
+          <p class="card-name">{{item.company_name}}</p>
+          <div class="d-flex card-details">
+            <p class="pe-2">{{item.dates}}</p>
+            <p>&#183</p>
+            <p class="ps-2">{{item.location}}</p>
+          </div>
+          <div>
+            Responsibilities:
+            <ul>
+              {% for r in item.responsibilities %}
+              <li>{{r}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     {% endfor %}

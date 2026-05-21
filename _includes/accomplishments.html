@@ -1,5 +1,5 @@
 <div class="row g-5 mb-5">
-  <h3 class="fw-bold pb-3 mb-5">Accomplishments</h3>
+  <h3 class="fw-bold border-bottom pb-3 mb-5">Accomplishments</h3>
   <div class="accomplishment-container">
     {% for item in site.data.accomplishments.items %}
     <div class="card-item">
@@ -10,8 +10,8 @@
           <p class="ps-2">{{item.dates}}</p>
       </div>
       <p>{{item.description}}</p>
-      <a target="_blank" rel="noopener noreferrer" href="{{item.certificate_link}}"><img src="assets/img/graduation-cap-solid-full.svg" class="logo" alt="binoculars"/></a>
-      <a target="_blank" rel="noopener noreferrer" href="{{item.program_link}}"><img src="assets/img/arrow-up-right-from-square-solid-full.svg" class="logo" alt="binoculars"/></a>
+      <a target="_blank" rel="noopener noreferrer" href="{{ item.certificate_link | relative_url }}"><img src="{{ '/assets/img/graduation-cap-solid-full.svg' | relative_url }}" class="logo" alt="binoculars"/></a>
+      <a target="_blank" rel="noopener noreferrer" href="{{ item.program_link | relative_url }}"><img src="{{ '/assets/img/arrow-up-right-from-square-solid-full.svg' | relative_url }}" class="logo" alt="binoculars"/></a>
     </div>
     {% endfor %}
   </div>
