@@ -34,10 +34,40 @@ body a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 0
+  margin-top: 0;
 }
 
-.accomplishment-item {
+.experience-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  // background-color:#f7f7f7
+}
+
+.experience-header {
+  flex: 0 0 30%;
+}
+
+.experience-subheader {
+  font-size: 24px;
+  color: grey
+}
+
+.experience-items-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.experience-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-item {
   margin-bottom: 1.5rem;
   text-overflow: ellipsis;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
@@ -49,11 +79,15 @@ body a {
   box-sizing: border-box;
 }
 
-.accomplishment-name {
+.experience-items-container .card-item {
+  width: 100%;
+}
+
+.card-name {
   font-weight: bold;
   font-size: 20px;
 }
 
-.accomplishment-details {
+.card-details {
   font-weight: 300;
 }

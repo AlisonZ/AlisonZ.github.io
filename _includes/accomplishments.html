@@ -1,10 +1,10 @@
 <div class="row g-5 mb-5">
-  <h3 class="fw-bold border-bottom pb-3 mb-5">Accomplishments</h3>
-  <div class="accomplishment-container ">
+  <h3 class="fw-bold pb-3 mb-5">Accomplishments</h3>
+  <div class="accomplishment-container">
     {% for item in site.data.accomplishments.items %}
-    <div class="accomplishment-item">
-       <p class="accomplishment-name">{{item.name}}</p>
-       <div class="d-flex accomplishment-details">
+    <div class="card-item">
+       <p class="card-name">{{item.name}}</p>
+       <div class="d-flex card-details">
           <p class="pe-2">{{item.institution}}</p>
           <p>&#183</p>
           <p class="ps-2">{{item.dates}}</p>

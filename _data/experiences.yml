@@ -1,0 +1,6 @@
+items:
+- {job_title: 'Senior Software Engineer', company_name: 'Indeed', dates: '2018-present', location: 'Seattle, WA', responsibilities: ['thing1', 'thing2']} 
+- {job_title: 'CompLing Masters Student', company_name: 'University of Washington', dates: '2025-present', location: 'Seattle, WA', responsibilities: ['thing1', 'thing2']} 
+- {job_title: 'Software Engineer Student', company_name: 'Ada Developers Academy', dates: '2017-2018', location: 'Seattle, WA', responsibilities: ['thing1', 'thing2']} 
+- {job_title: 'Linguistics MA Student', company_name: 'UC Berkeley', dates: '2013-2015', location: 'Berkeley, CA', responsibilities: ['thing1', 'thing2']} 
+- {job_title: 'Linguistics BA Student', company_name: 'University of  Washington', dates: '2011-2013', location: 'Seattle, WA', responsibilities: ['thing1', 'thing2']} 

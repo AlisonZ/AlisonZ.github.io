@@ -1,7 +1,27 @@
-<div class="row g-5 mb-5">
-  <div>
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Experience</h3>
-    <div>Detail timeline of experience</div>
-    <div>Add cards for each item</div>
+<div class="experience-layout g-5 mb-5">
+  <div class="experience-header">
+    <h3 class="fw-bold pb-3 mb-5">Experience</h3>
+    <p class="experience-subheader">Previous associations and positions that have helped to gather experience</p>
+  </div>
+  <div class="experience-items-container">
+    {% for item in site.data.experiences.items %}
+    <div class="card-item">
+      <p class="card-name">{{item.job_title}}</p>
+      <p class="card-name">{{item.company_name}}</p>
+      <div class="d-flex card-details">
+        <p class="pe-2">{{item.dates}}</p>
+        <p>&#183</p>
+        <p class="ps-2">{{item.location}}</p>
+      </div>
+      <div>
+        Responsibilities:
+        <ul>
+          {% for r in item.responsibilities %}
+          <li>{{r}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
